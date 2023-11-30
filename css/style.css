@@ -56,7 +56,7 @@ header {
   height: 65px;
   max-width: 1440px;
   padding-top: 24px;
-  width: 2000px;
+  max-width: 2000px;
   margin: 0 auto;
 }
 
@@ -115,7 +115,7 @@ header {
   background-position: center;
   background-size: cover;
   padding-top: 200px;
-  width: 2000px;
+  max-width: 2000px;
   margin: 0 auto;
 }
 .section-main__box {
@@ -157,6 +157,8 @@ header {
 .section-help {
   height: 800px;
   background-color: white;
+  max-width: 2000px;
+  margin: 0 auto;
   margin: 0 auto;
 }
 .section-help__header {
@@ -208,16 +210,20 @@ header {
 .content-container {
   padding-top: 50px;
   margin: 0 auto;
-  width: 1180px;
+  max-width: 1180px;
   height: 800px;
 }
 
 .portfolio {
   background-color: #F6F4F4;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
 .prices {
   background-color: white;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 .prices__content-container {
   height: 840px;
@@ -301,6 +307,8 @@ header {
 
 .about {
   background-color: #F6F4F4;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 .about__content-container {
   height: 700px;
@@ -335,6 +343,8 @@ header {
 
 footer {
   background-color: #E3E3E3;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
 .footer__content-container {
