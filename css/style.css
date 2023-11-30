@@ -51,16 +51,11 @@ html * {
   font-weight: 300;
   font-style: normal;
 }
-body {
-  max-width: 2000px;
-}
-
 header {
   position: relative;
   height: 65px;
-  max-width: 1440px;
-  padding-top: 24px;
   max-width: 2000px;
+  padding-top: 24px;
   margin: 0 auto;
 }
 
@@ -122,6 +117,9 @@ header {
   max-width: 2000px;
   margin: 0 auto;
 }
+.section-main__content-container {
+  max-width: 2000px;
+}
 .section-main__box {
   font-size: 48px;
   margin: 0 auto;
@@ -173,7 +171,7 @@ header {
 }
 .section-help__wraper {
   position: relative;
-  width: 1180px;
+  max-width: 1180px;
 }
 .section-help__wraper_reverse {
   text-align: end;
