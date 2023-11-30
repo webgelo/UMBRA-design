@@ -51,6 +51,10 @@ html * {
   font-weight: 300;
   font-style: normal;
 }
+body {
+  max-width: 2000px;
+}
+
 header {
   position: relative;
   height: 65px;
