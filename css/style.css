@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -83,6 +84,7 @@ header {
   display: inline;
   margin-right: 52px;
   font-weight: 300;
+  cursor: pointer;
 }
 .nav-menu__item:last-child {
   margin-right: 0px;
@@ -383,6 +385,7 @@ footer {
 .footer__logo {
   width: 202px;
   height: 60px;
+  cursor: pointer;
 }
 .footer__contacts {
   text-align: end;
@@ -410,4 +413,166 @@ footer {
   vertical-align: middle;
   display: flex;
   align-items: center;
+}
+
+.portfolio {
+  padding-top: 50px;
+  height: 700px;
+}
+.portfolio__content-container {
+  height: 400px;
+  padding-top: 0px;
+  display: flex;
+  align-items: center;
+}
+.portfolio__header-wrapper {
+  width: 1180px;
+  margin: 0 auto;
+}
+.portfolio__subheader {
+  margin-bottom: 50px;
+}
+.portfolio__subheader_modal {
+  text-align: center;
+  color: black;
+}
+.portfolio__modalBackground {
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  /* указываем z-индекс для корректного наслаивания */
+  z-index: 1;
+}
+.portfolio__modalActive {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  top: calc(50% - 300px);
+  left: calc(50% - 400px);
+  background-color: rgb(255, 255, 255);
+  cursor: default;
+}
+.portfolio__modalClose {
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.portfolio__x {
+  width: 40px;
+  height: 40px;
+}
+.portfolio__modalWindow {
+  height: 100%;
+  width: 100%;
+  background-color: #E3E3E3;
+}
+.portfolio__head {
+  width: 100%;
+  height: 60px;
+  padding-top: 16px;
+  background-color: #C4C2C2;
+}
+
+.carousel-wrapper {
+  height: 410px;
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  margin-right: 15px;
+}
+.carousel-wrapper__photo-ticket {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 410px;
+  transition: transform 0.7s;
+  overflow: hidden;
+}
+.carousel-wrapper__photo-ticket:hover {
+  cursor: pointer;
+}
+.carousel-wrapper__btn {
+  border: none;
+  width: 25px;
+  height: 25px;
+  margin-right: 30px;
+  transform: translateY(-40px);
+}
+.carousel-wrapper__btn:nth-last-child(2) {
+  margin-right: 0px;
+}
+.carousel-wrapper__img-wrapper {
+  width: 250px;
+  height: 320px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.carousel-wrapper__img-wrapper img {
+  width: 100%;
+  height: auto;
+}
+.carousel-wrapper__img-wrapper img:hover {
+  scale: 1.1;
+}
+.carousel-wrapper__design-obj {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.carousel-wrapper__obj-info {
+  font-size: 18px;
+  color: #D5BA75;
+}
+
+.modal-wrapper {
+  height: 540px;
+  width: 800px;
+  position: relative;
+  overflow: hidden;
+}
+.modal-wrapper__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-20px);
+  border: none;
+  height: 50px;
+  width: 50px;
+  z-index: 1;
+  background-color: white;
+  padding: 0;
+  border-radius: 50%;
+}
+.modal-wrapper__btn--left {
+  left: 30px;
+}
+.modal-wrapper__btn--right {
+  right: 30px;
+}
+.modal-wrapper__arrows {
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+}
+.modal-wrapper__img-wrapper {
+  position: absolute;
+  top: 0px;
+  width: 800px;
+  height: 540px;
+  overflow: hidden;
+  transition: transform 0.7s;
+}
+.modal-wrapper__img-wrapper img {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
