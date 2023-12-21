@@ -108,7 +108,7 @@ arrPrj[7] = new DesignProjects (
     "img/flat_souzny_prsp/",
     "",
     "flat_souzny_prsp_007.jpg",
-    ["flat_souzny_prsp_001.jpg","flat_souzny_prsp_002.jpg","flat_souzny_prsp_003.jpg","flat_souzny_prsp_005.jpg","flat_souzny_prsp_006.jpg","flat_souzny_prsp_007.jpg","flat_souzny_prsp_008.jpg","flat_souzny_prsp_009.jpg",]
+    ["flat_souzny_prsp_001.jpg","flat_souzny_prsp_002.jpg","flat_souzny_prsp_003.jpg","flat_souzny_prsp_005.jpg","flat_souzny_prsp_006.jpg","flat_souzny_prsp_007.jpg","flat_souzny_prsp_009.jpg","flat_souzny_prsp_010.jpg",]
     );
 arrPrj[8] = new DesignProjects (
     8,
