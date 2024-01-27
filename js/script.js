@@ -15,13 +15,27 @@ const modalImgL = document.querySelector(".modal-wrapper__arrows_left")
 
 let targetSlide = 0
 
+const mobileWidthMedia_1199 = window.matchMedia('(max-width: 1199px)');
+const mobileWidthMedia_767 = window.matchMedia('(max-width: 767px)');
 
-const countOnWindow = 4 //Количесвто карточек проектов на экране в секции Портфолио
+let countOnWindow = 4 //Количесвто карточек проектов на экране в секции Портфолио
+if (mobileWidthMedia_1199.matches) countOnWindow = 3;
+if (mobileWidthMedia_767.matches) countOnWindow = 2;
+
 const countSlide = slides.length //Количество проектов всего
 
 let currSlide = 0 //номер активного слайда в первой позиции карусели. Не путать с выбранным слайдом по клику
 let selectedPrj // Номер выбранного пользователем проекта в карусели
 let countPhoto = 0; //Количесвто фото в проекте
+
+mobileWidthMedia_1199.addEventListener('change', function (event) {
+    if (event.matches) countOnWindow = 3;
+    else countOnWindow = 4;
+})
+mobileWidthMedia_767.addEventListener('change', function (event) {
+    if (event.matches) countOnWindow = 2;
+    else countOnWindow = 3;
+})
 
 slides.forEach(function(sl,i){
     sl.style.transform = `translateX(${107*i}%)` //Позиционируем карточки проектов

@@ -1,0 +1,61 @@
+@media (max-width: 1199px) {
+  .content-container {
+    width: 960px;
+  }
+  .nav-menu__phone-item {
+    font-size: 12px;
+  }
+  .nav-menu__contacts {
+    width: 180px;
+  }
+  .section-help__wraper {
+    max-width: 960px;
+  }
+  .section-help__wraper-text {
+    left: 215px;
+  }
+  .portfolio__header-wrapper {
+    width: 960px;
+  }
+  .prices__content-container {
+    height: 770px;
+  }
+  .ticket-price {
+    width: 300px;
+    height: 430px;
+  }
+  .ticket-price table {
+    width: 80%;
+  }
+  .ticket-price__header {
+    font-size: 18px;
+  }
+  .ticket-price__header span {
+    font-size: 24px;
+  }
+  .ticket-price__hr {
+    width: 315px;
+    left: 80px;
+    top: 220px;
+  }
+  .ticket-price__header {
+    margin-bottom: 25px;
+  }
+  .ticket-price td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .ticket-price table {
+    margin-bottom: 15px;
+  }
+  .about__designer-foto-wrp {
+    margin-right: 20px;
+  }
+  .about__text-wrp {
+    width: 420px;
+  }
+  .about__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}/*# sourceMappingURL=tablet-horison.css.map */
