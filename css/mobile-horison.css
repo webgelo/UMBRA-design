@@ -1,116 +1,32 @@
 @media (max-width: 767px) {
   .section-main {
-    width: 100%;
     height: 370px;
-    padding-top: 30px;
+    padding-top: 70px;
   }
   .section-main__box {
     margin-bottom: 50px;
+    width: 7em;
+    height: 2.5em;
+    padding-top: 0.5em;
   }
-  .subheader {
-    margin-bottom: 30px;
+  .section-main__header {
+    font-size: 0.6em;
   }
-  .content-container {
-    width: 100%;
-    padding-top: 30px;
-    height: 700px;
+  .section-main__text {
+    font-size: 0.25em;
   }
-  header {
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
+  .button {
+    font-size: 0.9rem;
   }
-  .section-help {
-    height: 700px;
+  .section-help__designer-img {
+    width: 110px;
+    height: 110px;
   }
-  .section-help__wraper {
-    width: 100%;
-  }
-  .section-help__wraper-text {
-    left: 215px;
-  }
-  .section-help__wraper_reverse {
-    text-align: start;
-  }
-  .portfolio {
-    padding-top: 30px;
-    height: 620px;
-  }
-  .portfolio__header-wrapper {
-    width: 100%;
-    margin-bottom: 0px;
-  }
-  .portfolio__subheader {
-    margin-bottom: 0px;
-  }
-  .prices {
-    width: 100%;
-  }
-  .prices__content-container {
-    height: 740px;
-  }
-  .prices__footer-text {
-    margin-bottom: 20px;
-    font-size: 12px;
-  }
-  .ticket-price {
-    width: 33%;
-    height: 455px;
-    padding-top: 5px;
-  }
-  .ticket-price table {
-    width: 85%;
-  }
-  .ticket-price__header {
-    font-size: 16px;
-  }
-  .ticket-price__header span {
-    font-size: 16px;
-  }
-  .ticket-price__header b {
-    font-size: 16px;
-  }
-  .ticket-price__hr {
-    width: 370px;
-    left: 0px;
-    top: 220px;
-  }
-  .ticket-price__header {
-    margin-bottom: 25px;
-  }
-  .ticket-price td {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 14px;
-  }
-  .ticket-price table {
-    margin-bottom: 15px;
-  }
-  .ticket-price__footer-text {
-    font-size: 12px;
-    margin-left: 8%;
-  }
-  .about__content-container {
-    height: 910px;
-  }
-  .about__designer-foto-wrp {
-    width: 40%;
-    margin-right: 20px;
-    margin-bottom: 30px;
-  }
-  .about__text-wrp {
-    width: 80%;
-  }
-  .about__text {
-    font-size: 14px;
+  .section-help__text {
     line-height: 24px;
-    padding-left: 20%;
+    font-size: 12px;
   }
-  .about__wrapper {
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .footer__content-container {
-    height: 380px;
+  .section-help__text span {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=mobile-horison.css.map */
