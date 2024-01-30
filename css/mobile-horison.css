@@ -18,6 +18,9 @@
   .button {
     font-size: 0.9rem;
   }
+  .section-help {
+    height: 500px;
+  }
   .section-help__designer-img {
     width: 110px;
     height: 110px;
