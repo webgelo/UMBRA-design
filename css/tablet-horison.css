@@ -19,7 +19,7 @@
     position: absolute;
     z-index: 20;
     top: 0px;
-    right: -100%;
+    right: -40%;
     transition: 0.6s all;
     display: flex;
     flex-direction: column;
@@ -28,6 +28,14 @@
   }
   .nav-menu__list_active {
     right: 0px;
+  }
+  .nav-menu__menu-hidden {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
   }
   .hamburger {
     width: 30px;
