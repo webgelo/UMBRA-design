@@ -29,4 +29,10 @@
     line-height: 24px;
     font-size: 14px;
   }
+  .portfolio__modalActive {
+    width: 450px;
+    height: 300px;
+    left: calc(50% - 225px);
+    top: calc(50% - 150px);
+  }
 }/*# sourceMappingURL=mobile-horison.css.map */
