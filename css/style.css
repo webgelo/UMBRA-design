@@ -311,6 +311,7 @@ header {
   vertical-align: bottom;
   font-size: 16px;
   color: #D5BA75;
+  border-left: 1px solid #D5BA75;
 }
 .ticket-price:last-child {
   margin-right: 0px;
@@ -337,26 +338,17 @@ header {
 .ticket-price__footer-text span {
   color: red;
 }
-.ticket-price__hr {
-  width: 350px;
-  border: 1px solid #D5BA75;
-  transform: rotate(90deg);
-  position: absolute;
-  top: 255px;
-  left: 110px;
-}
 
 .about {
   background-color: #F6F4F4;
   max-width: 2000px;
-  margin: 0 auto;
 }
 .about__content-container {
   height: 700px;
 }
 .about__designer-foto-wrp {
   width: 280px;
-  height: 420px;
+  height: auto;
   margin-right: 60px;
 }
 .about__designer-foto-wrp:hover {
@@ -508,7 +500,7 @@ footer {
 .portfolio__modalActive {
   position: absolute;
   width: 800px;
-  height: 600px;
+  height: 540px;
   top: calc(50% - 300px);
   left: calc(50% - 400px);
   background-color: rgb(255, 255, 255);
@@ -537,6 +529,7 @@ footer {
   padding-top: 22px;
   background-color: #C4C2C2;
   text-align: center;
+  display: none;
 }
 
 .carousel-wrapper {
@@ -560,13 +553,22 @@ footer {
 }
 .carousel-wrapper__btn {
   border: none;
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0);
   margin-right: 30px;
+  padding: 0px;
   transform: translateY(150px);
 }
 .carousel-wrapper__btn:nth-last-child(2) {
   margin-right: 0px;
+}
+.carousel-wrapper__btn:last-child {
+  margin-right: 0px;
+}
+.carousel-wrapper__arrows {
+  height: 50px;
+  width: 50px;
 }
 .carousel-wrapper__img-wrapper {
   width: 250px;
