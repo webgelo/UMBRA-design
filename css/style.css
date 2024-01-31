@@ -533,6 +533,7 @@ footer {
 }
 
 .carousel-wrapper {
+  scroll-snap-type: x mandatory;
   height: 500px;
   width: 1100px;
   margin: 0 auto;
@@ -571,6 +572,7 @@ footer {
   width: 50px;
 }
 .carousel-wrapper__img-wrapper {
+  scroll-snap-align: start;
   width: 250px;
   height: 320px;
   overflow: hidden;
