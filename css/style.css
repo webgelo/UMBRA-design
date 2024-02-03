@@ -110,7 +110,7 @@ header {
 }
 
 .section-main {
-  height: 750px;
+  height: calc(100vh - 65px);
   background-repeat: no-repeat;
   background-image: url("../img/photo_main.png");
   background-position: center;
@@ -465,7 +465,7 @@ footer {
   max-width: 2000px;
   margin: 0 auto;
   padding-top: 60px;
-  height: 750px;
+  height: 100vh;
 }
 .portfolio__content-container {
   height: 500px;
