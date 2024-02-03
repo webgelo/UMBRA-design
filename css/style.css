@@ -566,6 +566,7 @@ footer {
 .carousel-wrapper__arrows {
   height: 50px;
   width: 50px;
+  cursor: pointer;
 }
 .carousel-wrapper__img-wrapper {
   width: 250px;
