@@ -1,0 +1,127 @@
+@media (max-width: 575px) {
+  .nav-menu__phone-item {
+    display: none;
+  }
+  .section-main {
+    padding-top: 25vh;
+  }
+  .section-main__box {
+    margin-bottom: 50px;
+    width: 100vw;
+    height: min-content;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .section-main__header {
+    font-size: 0.6em;
+  }
+  .section-main__text {
+    font-size: 0.25em;
+  }
+  .section-main__btn {
+    font-size: 0.9rem;
+    width: 100vw;
+  }
+  .header {
+    font-size: 28px;
+  }
+  .subheader {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  .section-help {
+    min-height: 500px;
+  }
+  .section-help__text {
+    line-height: 24px;
+    font-size: 14px;
+  }
+  .section-help__designer-img {
+    width: 20vw;
+    height: 20vw;
+    margin: 0px 3% 0px 0px;
+  }
+  .section-help__designer-img_reverce {
+    width: 20vw;
+    height: 20vw;
+    margin: 0px;
+  }
+  .section-help__wraper {
+    min-height: 130px;
+  }
+  .section-help__wraper_reverse {
+    padding-left: 1%;
+  }
+  .section-help__wraper:last-child {
+    margin-bottom: 30px;
+  }
+  .section-help__wraper-text {
+    height: min-content;
+    left: 5%;
+  }
+  .portfolio {
+    height: 530px;
+    width: 100vw;
+  }
+  .portfolio__modalActive {
+    width: 450px;
+    height: 300px;
+    left: calc(50% - 225px);
+    top: calc(50% - 150px);
+  }
+  .portfolio__modalActive {
+    width: 100vw;
+    top: 100px;
+    left: 0;
+  }
+  .portfolio__modalClose {
+    right: 2%;
+    top: 2%;
+    z-index: 20;
+  }
+  .carousel-wrapper__photo-ticket {
+    width: 150px;
+  }
+  .carousel-wrapper__img-wrapper {
+    height: 200px;
+  }
+  .carousel-wrapper__btn {
+    transform: translateY(80px);
+  }
+  .prices__wrapper {
+    display: block;
+  }
+  .ticket-price {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .ticket-price:last-child {
+    margin: 0 auto;
+  }
+  .footer__first-wrap {
+    display: block;
+  }
+  .footer__logo {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .footer__social-net {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer__contacts {
+    text-align: center;
+  }
+  .footer__company-name {
+    margin-bottom: 20px;
+  }
+  .footer__second-wrap {
+    margin-bottom: 10px;
+    display: block;
+  }
+  .footer__subfooter-wrap {
+    display: block;
+    text-align: center;
+  }
+}/*# sourceMappingURL=mobile-vertical.css.map */

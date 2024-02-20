@@ -1,6 +1,5 @@
 @media (max-width: 767px) {
   .section-main {
-    height: 370px;
     padding-top: 70px;
   }
   .section-main__box {
@@ -19,9 +18,26 @@
     font-size: 0.9rem;
   }
   .section-help {
-    height: 500px;
+    min-height: 500px;
+  }
+  .section-help__content-container {
+    min-height: 100%;
+  }
+  .section-help__wraper {
+    min-height: 130px;
+    margin-bottom: 10px;
+  }
+  .section-help__wraper_reverse {
+    padding-left: 10%;
+  }
+  .section-help__wraper:last-child {
+    margin-bottom: 30px;
   }
   .section-help__designer-img {
+    width: 110px;
+    height: 110px;
+  }
+  .section-help__designer-img_reverce {
     width: 110px;
     height: 110px;
   }
