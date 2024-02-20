@@ -453,15 +453,19 @@ footer {
   font-size: 12px;
   font-weight: 200;
   line-height: 25px;
+  color: blue;
 }
 .footer__subfooter-text a:hover {
-  color: blue;
+  color: #ac0cc4;
 }
 .footer__subfooter-wrap {
   height: 80px;
   vertical-align: middle;
   display: flex;
   align-items: center;
+}
+.footer__personal-date {
+  color: blue;
 }
 
 .portfolio {
