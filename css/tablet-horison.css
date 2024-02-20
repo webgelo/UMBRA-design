@@ -72,7 +72,15 @@
   .section-main__box {
     margin-bottom: 80px;
   }
+  .header {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   .subheader {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 30px;
   }
   .content-container {
@@ -189,6 +197,8 @@
   .about__text-wrp {
     width: max-content;
     padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
     height: auto;
   }
   .about__text {
