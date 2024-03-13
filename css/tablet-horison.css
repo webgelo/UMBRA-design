@@ -67,10 +67,10 @@
   }
   .section-main {
     width: 100%;
-    padding-top: 150px;
+    padding-top: 10vh;
   }
   .section-main__box {
-    margin-bottom: 80px;
+    margin-bottom: 7vh;
   }
   .header {
     display: block;
