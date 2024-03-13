@@ -67,6 +67,7 @@
   }
   .section-main {
     width: 100%;
+    height: 400px;
     padding-top: 10vh;
   }
   .section-main__box {
