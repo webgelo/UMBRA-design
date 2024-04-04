@@ -17,6 +17,9 @@
   .button {
     font-size: 0.9rem;
   }
+  .form {
+    top: 3px;
+  }
   .section-help {
     min-height: 500px;
   }

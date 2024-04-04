@@ -45,89 +45,146 @@ class DesignProjects  {
 // ---------------------------------------------------------------------------------------------------
 
 let arrPrj =[];
-
 arrPrj[0] = new DesignProjects (
-    0, //Номер проекта в массиве проектов
-    "Администартивное здание", // Название проекта (идет на сайт)
-    "img/admBuilding/", // Путь до фото проекта
-    "Дизайн зон общего пользования, S=242.2 м&sup2", // Доп. описание проекта 
-    "001.jpg", // Главное фото проекта
-    ["001.jpg","002.jpg","003.jpg","004.jpg","005.jpg","006.jpg","007.jpg","008.jpg","009.jpg","010.jpg","011.jpg","012.jpg","013.jpg","014.jpg","015.jpg","016.jpg","017.jpg","018.jpg","019.jpg","020.jpg","021.jpg","022.jpg","023.jpg"] // Массив фотографий проекта
-    );
+    0,
+    "Частный дом",
+    "img/dom_tiz_nadezhda/",
+    "",
+    "016.jpg",
+    ["001.jpg","002.jpg","003.jpg","004.jpg","005.jpg","006.jpg","007.jpg","008.jpg","009.jpg","010.jpg","011.jpg","012.jpg","013.jpg","014.jpg","016.jpg","017.jpg","018.jpg","019.jpg","020.jpg","021.jpg","022.jpg","023.jpg","024.jpg","025.jpg","026.jpg","027.jpg","028.jpg","029.jpg","030.jpg","031.jpg","032.jpg","033.jpg","034.jpg","035.jpg","036.jpg","037.jpg","038.jpg","039.jpg","040.jpg","041.jpg"]
+);
 arrPrj[1] = new DesignProjects (
     1,
+    "Квартира ул. Горная",
+    "img/flat_gornaya/",
+    "",
+    "007.jpg",
+    ["001.jpg","002.jpg","004.jpg","005.jpg","006.jpg","007.jpg","008.jpg","009.jpg","010.jpg","012.jpg","detskaya_001.jpg","detskaya_002.jpg","detskaya_003.jpg","garderobnaya_001_.jpg","garderobnaya_002_.jpg","spalnya_001.jpg","spalnya_002.jpg","spalnya_003.jpg","spalnya_004.jpg","spalnya_005.jpg","spalnya_006.jpg","su_001.jpg","su_002.jpg","vannaya_001b.jpg","vannaya_002b.jpg","vannaya_003b.jpg","vannaya_004b.jpg"]
+);
+arrPrj[2] = new DesignProjects (
+    2,
+    "Квартира ул. Новая",
+    "img/kv_novaya/",
+    "",
+    "001.jpg",
+    ["001.jpg","002.jpg","003.jpg","004.jpg","005.jpg","006.jpg","007.jpg","008.jpg","009.jpg","010.jpg","011.jpg","detskaya D_001.jpg","detskaya D_002.jpg","detskaya D_003.jpg","detskaya D_004.jpg","detskaya D_005.jpg","detskaya D_006.jpg","detskaya D_007.jpg","detskaya D_008.jpg","detskaya M_001.jpg","detskaya M_002.jpg","detskaya M_003.jpg","detskaya M_004.jpg","detskaya M_005.jpg","detskaya M_006.jpg","garderobnaya_001.jpg","garderobnaya_002.jpg","garderobnaya_004.jpg","spalnya_001.jpg","spalnya_002.jpg","spalnya_003.jpg","spalnya_004.jpg","spalnya_005.jpg","spalnya_006.jpg","spalnya_007.jpg","spalnya_008.jpg","spalnya_009.jpg","su 1_001.jpg","su 1_002.jpg","su 2_001.jpg","su 2_002.jpg","su 2_004.jpg"]
+);
+arrPrj[3] = new DesignProjects (
+    3,
+    "Квартира Шоколад",
+    "img/kv_shokolad/",
+    "",
+    "014.jpg",
+    ["001.jpg","002.jpg","003.jpg","004.jpg","005.jpg","006.jpg","007.jpg","008.jpg","009.jpg","010.jpg","011.jpg","012.jpg","013.jpg","014.jpg","015.jpg","016.jpg","017.jpg","018.jpg","019.jpg","020.jpg","021.jpg","022.jpg","023.jpg","024.jpg","025.jpg","026.jpg","027.jpg"]
+);
+arrPrj[4] = new DesignProjects (
+    4,
+    "Офис АИТ №1",
+    "img/office_ait/",
+    "",
+    "027.jpg",
+    ["001.jpg","002.jpg","003.jpg","004.jpg","005.jpg","006.jpg","007.jpg","008.jpg","009.jpg","010.jpg","011.jpg","012.jpg","013.jpg","014.jpg","015.jpg","016.jpg","017.jpg","018.jpg","019.jpg","020.jpg","021.jpg","022.jpg","023.jpg","024.jpg","025.jpg","026.jpg","027.jpg","028.jpg","029.jpg","030.jpg","031.jpg"]
+);
+arrPrj[5] = new DesignProjects (
+    5,
+    "Офис АИТ №2",
+    "img/office_ait2/",
+    "",
+    "001.jpg",
+    ["001.jpg","002.jpg","003.jpg","004.jpg","005.jpg","006.jpg","007.jpg","008.jpg","009.jpg","010.jpg","011.jpg","012.jpg","013.jpg","014.jpg","015.jpg","016.jpg","017.jpg","018.jpg","019.jpg","020.jpg","021.jpg","022.jpg","023.jpg","024.jpg","025.jpg","026.jpg","027.jpg","028.jpg"]
+);
+arrPrj[6] = new DesignProjects (
+    6,
+    "Торговый центр",
+    "img/tc/",
+    "",
+    "001.jpg",
+    ["001.jpg","002.jpg","003.jpg","004.jpg","005.jpg","006.jpg","007.jpg","008.jpg","010.jpg","011.jpg","012.jpg","013.jpg","014.jpg"]
+);
+
+
+arrPrj[7] = new DesignProjects (
+    7, //Номер проекта в массиве проектов
+    "Административное здание", // Название проекта (идет на сайт)
+    "img/admBuilding/", // Путь до фото проекта
+    "Дизайн зон общего пользования, S=242.2 м&sup2", // Доп. описание проекта 
+    "zd_mosk_su_hall1.jpg", // Главное фото проекта
+    ["zd_mosk_su_hall1.jpg","zd_mosk_su_hall2.jpg","zd_mosk_su_hall3.jpg","zd_mosk_su_hall4.jpg","zd_mosk_su_hall5.jpg","zd_mosk_su_hall6.jpg","zd_mosk_su_hall7.jpg","zd_mosk_su_hall8.jpg","zd_mosk_su_hall9.jpg","zd_mosk_su_hall10.jpg","zd_mosk_su_hall11.jpg","zd_mosk_su_hall12.jpg","zd_mosk_su_lest1.jpg","zd_mosk_su_lest2.jpg","zd_mosk_su_lest3.jpg","zd_mosk_su_lest4.jpg","zd_mosk_su_lest5.jpg","zd_mosk_su_lest6.jpg","zd_mosk_su_lest7.jpg","zd_mosk_su_lest8.jpg","zd_mosk_su_lest9.jpg","zd_mosk_su_muzh1.jpg","zd_mosk_su_muzh2.jpg","zd_mosk_su_muzh3.jpg","zd_mosk_su_muzh4.jpg","zd_mosk_su_muzh5.jpg","zd_mosk_su_muzh6.jpg","zd_mosk_su_muzh7.jpg","zd_mosk_su_obsh1.jpg","zd_mosk_su_obsh2.jpg","zd_mosk_su_zh1.jpg","zd_mosk_su_zh2.jpg","zd_mosk_su_zh3.jpg","zd_mosk_su_zh4.jpg"] // Массив фотографий проекта
+    );
+arrPrj[8] = new DesignProjects (
+    8,
     "Баня",
     "img/bathhouse/",
     "",
     "Bathhose_001.jpg",
     ["Bathhose_001.jpg","Bathhose_002.jpg","Bathhose_003.jpg","Bathhose_004.jpg"]
     );
-arrPrj[2] = new DesignProjects (
-    2,
-    "Детская комната",
+arrPrj[9] = new DesignProjects (
+    9,
+    "Детские комнаты",
     "img/chldroom/",
     "",
     "chldroom_001.jpg",
-    ["chldroom_001.jpg","chldroom_002.jpg","chldroom_003.jpg","chldroom_004.jpg","chldroom_005.jpg"]
+    ["chldroom_001.jpg","chldroom_002.jpg","chldroom_003.jpg","chldroom_004.jpg","chldroom_005.jpg","chldroom_girl_001.jpg","chldroom_girl_002.jpg","chldroom_girl_003.jpg","chldroom_girl_004.jpg"]
     );
-arrPrj[3] = new DesignProjects (
-    3,
+arrPrj[10] = new DesignProjects (
+    10,
     "Квартира ул. С.Акимова",
     "img/flat_akimova_str/",
     "Плошадь 68 м&sup2",
     "flat_akimova_str_002.jpg",
     ["flat_akimova_str_000.jpg","flat_akimova_str_001.jpg","flat_akimova_str_002.jpg","flat_akimova_str_003.jpg","flat_akimova_str_004.jpg","flat_akimova_str_005.jpg","flat_akimova_str_006.jpg","flat_akimova_str_007.jpg","flat_akimova_str_008.jpg","flat_akimova_str_009.jpg","flat_akimova_str_010.jpg","flat_akimova_str_011.jpg","flat_akimova_str_012.jpg","flat_akimova_str_013.jpg","flat_akimova_str_014.jpg","flat_akimova_str_015.jpg","flat_akimova_str_016.jpg","flat_akimova_str_017.jpg","flat_akimova_str_018.jpg","flat_akimova_str_019.jpg","flat_akimova_str_020.jpg"]
     );
-arrPrj[4] = new DesignProjects (
-    4,
+arrPrj[11] = new DesignProjects (
+    11,
     "Квартира  ЖК Цветы",
     "img/flat_flowers/",
     "",
     "flat_flowers_002.jpg",
     ["flat_flowers_002.jpg","flat_flowers_003.jpg","flat_flowers_004.jpg","flat_flowers_005.jpg","flat_flowers_006.jpg","flat_flowers_007.jpg","flat_flowers_008.jpg","flat_flowers_010.jpg","flat_flowers_011.jpg","flat_flowers_012.jpg","flat_flowers_013.jpg","flat_flowers_014.jpg","flat_flowers_015.jpg","flat_flowers_016.jpg",]
     );
-arrPrj[5] = new DesignProjects (
-    5,
+arrPrj[12] = new DesignProjects (
+    12,
     "Квартира  ул.Республиканская",
     "img/flat_respublic/",
     "",
     "flat_respublic_001.jpg",
     ["flat_respublic_001.jpg","flat_respublic_002.jpg","flat_respublic_003.jpg","flat_respublic_004.jpg","flat_respublic_005.jpg","flat_respublic_006.jpg","flat_respublic_007.jpg","flat_respublic_008.jpg","flat_respublic_009.jpg","flat_respublic_010.jpg","flat_respublic_011.jpg","flat_respublic_012.jpg","flat_respublic_013.jpg","flat_respublic_014.jpg","flat_respublic_015.jpg"]
     );
-arrPrj[6] = new DesignProjects (
-    6,
+arrPrj[13] = new DesignProjects (
+    13,
     "Квартира ул.Щербакова",
     "img/flat_sherbakov_str/",
     "",
     "flat_sherbakov_str_010.jpg",
     ["flat_sherbakov_str_001.jpg","flat_sherbakov_str_002.jpg","flat_sherbakov_str_003.jpg","flat_sherbakov_str_004.jpg","flat_sherbakov_str_005.jpg","flat_sherbakov_str_006.jpg","flat_sherbakov_str_007.jpg","flat_sherbakov_str_008.jpg","flat_sherbakov_str_009.jpg","flat_sherbakov_str_010.jpg","flat_sherbakov_str_011.jpg","flat_sherbakov_str_012.jpg","flat_sherbakov_str_013.jpg","flat_sherbakov_str_014.jpg","flat_sherbakov_str_015.jpg","flat_sherbakov_str_016.jpg","flat_sherbakov_str_017.jpg","flat_sherbakov_str_018.jpg","flat_sherbakov_str_019.jpg","flat_sherbakov_str_020.jpg","flat_sherbakov_str_021.jpg","flat_sherbakov_str_022.jpg","flat_sherbakov_str_023.jpg","flat_sherbakov_str_024.jpg","flat_sherbakov_str_025.jpg","flat_sherbakov_str_026.jpg","flat_sherbakov_str_027.jpg","flat_sherbakov_str_028.jpg","flat_sherbakov_str_029.jpg","flat_sherbakov_str_030.jpg","flat_sherbakov_str_031.jpg","flat_sherbakov_str_032.jpg","flat_sherbakov_str_033.jpg","flat_sherbakov_str_034.jpg","flat_sherbakov_str_035.jpg","flat_sherbakov_str_036.jpg","flat_sherbakov_str_037.jpg","flat_sherbakov_str_038.jpg","flat_sherbakov_str_039.jpg","flat_sherbakov_str_040.jpg","flat_sherbakov_str_041.jpg","flat_sherbakov_str_042.jpg","flat_sherbakov_str_043.jpg","flat_sherbakov_str_044.jpg","flat_sherbakov_str_045.jpg","flat_sherbakov_str_046.jpg",]
     );
-arrPrj[7] = new DesignProjects (
-    7,
+arrPrj[14] = new DesignProjects (
+    14,
     "Квартира пр-т Союзный",
     "img/flat_souzny_prsp/",
     "",
     "flat_souzny_prsp_007.jpg",
     ["flat_souzny_prsp_001.jpg","flat_souzny_prsp_002.jpg","flat_souzny_prsp_003.jpg","flat_souzny_prsp_005.jpg","flat_souzny_prsp_006.jpg","flat_souzny_prsp_007.jpg","flat_souzny_prsp_009.jpg","flat_souzny_prsp_010.jpg",]
     );
-arrPrj[8] = new DesignProjects (
-    8,
+arrPrj[15] = new DesignProjects (
+    15,
     "Квартира пер.Светлогорский",
     "img/flat_svetlogorsky_per/",
     "Площадь 61 м&sup2",
     "flat_svetlogorsky_per_001.jpg",
     ["flat_svetlogorsky_per_001.jpg","flat_svetlogorsky_per_002.jpg","flat_svetlogorsky_per_003.jpg","flat_svetlogorsky_per_004.jpg","flat_svetlogorsky_per_005.jpg","flat_svetlogorsky_per_006.jpg","flat_svetlogorsky_per_007.jpg","flat_svetlogorsky_per_008.jpg","flat_svetlogorsky_per_009.jpg","flat_svetlogorsky_per_010.jpg","flat_svetlogorsky_per_011.jpg","flat_svetlogorsky_per_012.jpg","flat_svetlogorsky_per_013.jpg","flat_svetlogorsky_per_014.jpg","flat_svetlogorsky_per_015.jpg","flat_svetlogorsky_per_016.jpg","flat_svetlogorsky_per_017.jpg","flat_svetlogorsky_per_018.jpg","flat_svetlogorsky_per_019.jpg","flat_svetlogorsky_per_020.jpg","flat_svetlogorsky_per_021.jpg","flat_svetlogorsky_per_022.jpg","flat_svetlogorsky_per_023.jpg","flat_svetlogorsky_per_024.jpg",]
     );
-arrPrj[9] = new DesignProjects (
-    9,
+arrPrj[16] = new DesignProjects (
+    16,
     "Офисное помещение",
     "img/office_1/",
     "",
     "office_1_001.jpg",
     ["office_1_001.jpg","office_1_002.jpg","office_1_003.jpg","office_1_004.jpg","office_1_005.jpg","office_1_006.jpg","office_1_007.jpg","office_1_008.jpg","office_1_009.jpg","office_1_010.jpg","office_1_011.jpg","office_1_012.jpg","office_1_013.jpg","office_1_014.jpg","office_1_015.jpg","office_1_016.jpg","office_1_017.jpg",]
     );
-arrPrj[10] = new DesignProjects (
-    10,
+arrPrj[17] = new DesignProjects (
+    17,
     "Офисное помещение",
     "img/office_2_120m/",
     "Площадь 120 м&sup2",

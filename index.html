@@ -37,31 +37,34 @@
                 <a class="nav-menu__phone-item" href="tel:+7 951 91 95 672">+7 951 91 95 672</a>
                 </div>
                 <div class="nav-menu__social-net">
-                    <a href="https://t.me/doma_kristina_guseva" target="_blank"><img class="nav-menu__img-item" src="icon/telegram-logo.png" alt="Telegram"></a>
+                    <a href="https://t.me/umbrainterior" target="_blank"><img class="nav-menu__img-item" src="icon/telegram-logo.png" alt="Telegram"></a>
                     <a href="https://www.instagram.com/umbrainterior" target="_blank"><img class="nav-menu__img-item" src="icon/instagram-logo.png" alt="Instagram"></a>
                 </div>
             </div>
         </nav>
     </header>
     <!-- Форма обратной связи---------------------------------------------------------------------- -->
-    <form class="form" action="./mail.php" method="post">
+    <form class="form form__hidden" method="post">
         <div class="form__form-group">
-           <input type="name" name="name" class="form-control" id="name" placeholder="Ваше имя">
-           <label for="name">Ваше имя:</label>
+           <input type="name" name="name" class="form-control" id="name" placeholder="Ваше имя" value="" required>
+           <label class="form__label" for="name"><span>*</span>Ваше имя:</label>
         </div>
         <div class="form__form-group">
-           <input type="email" name="email" class="form-control" id="email1" placeholder="Email">
-           <label for="email1">E-mail:</label>
+           <input type="email" name="email" class="form-control" id="email1" placeholder="Email" value="" required>
+           <label class="form__label" for="email"><span>*</span>E-mail:</label>
         </div>
         <div class="form__form-group">
-           <input type="phone" name="phone" class="form-control" id="phone" placeholder="Phone">
-           <label for="phone">Номер телефона:</label>
+           <input type="phone" name="phone" class="form-control" id="phone" placeholder="Phone" value="">
+           <label class="form__label" for="phone">Номер телефона:</label>
         </div>
         <div class="form__form-group">
-           <textarea class="form__form-control" name="message" rows="3"></textarea>
-           <label for="message">Сообщение:</label>
+           <textarea class="form__form-control" name="message" rows="3" value="" required></textarea>
+           <label class="form__label" for="message"><span>*</span>Сообщение:</label>
         </div>
-           <button type="submit" class="form__btn">Отправить сообщение</button>
+        <div class="form__form-group">
+            <button type="submit" class="form__btn">Отправить сообщение</button>
+            <button type="button" class="form__btn form__close">Отмена</button>
+        </div>
     </form>
     <!-- Главная секция------------------------------------------------------------------------------->
     <section class="section-main">
@@ -191,7 +194,7 @@
                             <tr><td>замер помещения</td><td>&#10004;</td></tr>
                             <tr><td>планировочные решения</td><td>&#10004;</td></tr>
                             <tr><td>авторская концепция интерьера</td><td>&#10004;</td></tr>
-                            <tr><td>коллажная подача </td><td>&#10004;</td></tr>
+                            <tr><td>3D визуализация</td><td>&#10004;</td></tr>
                             <tr><td>один круг правок </td><td>&#10004;</td></tr>
                             <tr><td></td><td></td></tr>     
                             <tr><td>базовый комплект чертежей (планы перегородок, пола, потолка, электрики, сантехники, отделки) </td><td>&#10004;</td></tr>
@@ -211,7 +214,7 @@
                             <tr><td>замер помещения</td><td>&#10004;</td></tr>
                             <tr><td>планировочные решения</td><td>&#10004;</td></tr>
                             <tr><td>авторская концепция интерьера</td><td>&#10004;</td></tr>
-                            <tr><td>коллажная подача </td><td>&#10004;</td></tr>
+                            <tr><td>3D визуализация</td><td>&#10004;</td></tr>
                             <tr><td>один круг правок </td><td>&#10004;</td></tr>
                             <tr><td></td><td></td></tr>     
                             <tr><td>базовый комплект чертежей (планы перегородок, пола, потолка, электрики, сантехники, отделки) </td><td>&#10004;</td></tr>
@@ -232,7 +235,7 @@
                             <tr><td>замер помещения</td><td>&#10004;</td></tr>
                             <tr><td>планировочные решения</td><td>&#10004;</td></tr>
                             <tr><td>авторская концепция интерьера</td><td>&#10004;</td></tr>
-                            <tr><td>коллажная подача </td><td>&#10004;</td></tr>
+                            <tr><td>3D визуализация</td><td>&#10004;</td></tr>
                             <tr><td>один круг правок </td><td>&#10004;</td></tr>
                             <tr><td></td><td></td></tr>     
                             <tr><td>базовый комплект чертежей (планы перегородок, пола, потолка, электрики, сантехники, отделки) </td><td>&#10004;</td></tr>
@@ -283,6 +286,7 @@
             </div>
         </div>
     </section>
+    
     <footer id="footer" class="footer">
         <div class="footer__content-container content-container">
             <div class="footer__first-wrap">    
@@ -290,8 +294,12 @@
                     <img class="footer__logo logo" src="img/UMBRA dg logo.svg" alt="Логотип UMBRA design group">
                 </div>
                 <div class="footer__social-net">
-                    <a href="https://t.me/doma_kristina_guseva" target="_blank"><img class="footer__img-item" src="icon/telegram-logo.png" alt="Telegram"></a>
+                    <a href="https://t.me/umbrainterior" target="_blank"><img class="footer__img-item" src="icon/telegram-logo.png" alt="Telegram"></a>
                     <a href="https://www.instagram.com/umbrainterior" target="_blank"><img class="footer__img-item" src="icon/instagram-logo.png" alt="Instagram"></a>
+                    
+                    <a href="https://vk.com/umbrainterior" target="_blank"><img class="footer__img-item" 
+                    src="icon/vk2.png" alt="vkonakte"></a>
+                    <a href="https://youtube.com/@umbrainterior" target="_blank"><img class="footer__img-item" src="icon/video.png" alt="yuotube"></a>
                 </div>
                 <div class="footer__contacts">
                     <h3 class="footer__company-name"><span>UMBRA</span> design group</h3>

@@ -123,4 +123,26 @@
     display: block;
     text-align: center;
   }
+  .form {
+    position: fixed;
+    transform: none;
+    top: 60px;
+    left: 0px;
+    width: 100vw;
+    height: 65vh;
+    padding-top: 5vh;
+    padding-left: 5vw;
+  }
+  .form__form-control {
+    width: 100%;
+  }
+  .form__btn {
+    width: 200px;
+  }
+  .form__btn:first-child {
+    margin-right: 3vw;
+  }
+  .form__form-control {
+    width: 90vw;
+  }
 }/*# sourceMappingURL=mobile-vertical.css.map */

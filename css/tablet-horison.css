@@ -27,12 +27,16 @@
     right: 0px;
   }
   .nav-menu__menu-hidden {
-    width: 100vw;
-    height: 100vh;
+    width: 0px;
+    height: 0px;
     position: absolute;
     top: 0px;
     left: 0px;
     overflow: hidden;
+  }
+  .menu-hidden_active {
+    width: 100vw;
+    height: 100vh;
   }
   .hamburger {
     width: 30px;

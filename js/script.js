@@ -13,6 +13,11 @@ const modalBtnL = document.querySelector(".modal-wrapper__btn--left");
 const modalImgR = document.querySelector(".modal-wrapper__arrows_right")
 const modalImgL = document.querySelector(".modal-wrapper__arrows_left")
 
+const form = document.querySelector(".form")
+const buttons = document.querySelectorAll(".button")
+const formHidden = document.querySelector(".form__hidden")
+const closeForm = document.querySelector(".form__close")
+
 let targetSlide = 0
 
 const mobileWidthMedia_1199 = window.matchMedia('(max-width: 1199px)');
@@ -220,3 +225,45 @@ function goToSlide(slides,slide){
     const logo = document.querySelector('#header')
     document.querySelector(".footer__logo").addEventListener("click",function(){logo.scrollIntoView({behavior: "smooth"})
     })
+
+    // Обработка кнопки для вызова формы обратной связи
+    buttons.forEach(function (value){    
+        value.addEventListener('click',function(){
+            formHidden.classList.remove('form__hidden')
+        })
+    })
+
+    // Обработка кнопки для закрытия формы обратной связи
+    closeForm.addEventListener('click', function(){
+        form.classList.add('form__hidden')
+    })
+
+    
+// Отправка письма из формы обратной связи в асинхронном режиме 
+function submitForm() {
+    // console.log("Отправить"); 
+    let formData = new FormData(form);
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "../mail.php",true);
+    xhr.send(formData);
+    xhr.onload = function() {
+        if (xhr.status >= 200 && xhr.status < 400) {
+          // Успешно обработанный запрос
+        // console.log(xhr.responseText);
+            alert("Письмо отправлено");
+            form.reset();
+        } else {
+          // Ошибка запроса
+        //   console.error('Ошибка: ' + xhr.status);
+            alert("Что-то пошло не так");
+          }
+    }
+    xhr.onerror = function() {
+        alert("Отсутствует соединение или невалидный URL");
+    };
+}
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Предотвращение стандартной отправки формы
+  submitForm(); // Здесь вызывается функция отправки формы через AJAX
+  form.classList.add('form__hidden')
+});

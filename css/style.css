@@ -161,18 +161,22 @@ header {
   border: none;
   border-radius: 0.25em;
   color: black;
+  cursor: pointer;
 }
 
 .form {
   position: fixed;
-  top: 200px;
+  top: 100px;
   left: 50%;
   transform: translateX(-251px);
   width: 500px;
   height: 320px;
-  background-color: white;
+  background-color: #F6F4F4;
   padding-top: 30px;
   padding-left: 25px;
+  z-index: 20;
+}
+.form__hidden {
   display: none;
 }
 .form__form-group {
@@ -189,6 +193,13 @@ header {
   width: 200px;
   height: 40px;
   border-radius: 5px;
+  cursor: pointer;
+}
+.form__btn:first-child {
+  margin-right: 40px;
+}
+.form__label span {
+  color: red;
 }
 
 .pers-data {
@@ -595,6 +606,7 @@ footer {
 .carousel-wrapper__design-obj {
   margin-bottom: 20px;
   font-size: 20px;
+  word-wrap: break-word;
 }
 .carousel-wrapper__obj-info {
   font-size: 18px;
