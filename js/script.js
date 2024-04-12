@@ -6,6 +6,8 @@ const imgLeftArrows = document.querySelector('.carousel-wrapper__arrows_left') /
 const imgRightArrows = document.querySelector('.carousel-wrapper__arrows_right')//Картинка Стрелки вправо
 const modal = document.querySelector('.portfolio__modalBackground')
 const closeX = document.querySelector('.portfolio__modalClose')
+const  modalActive= document.querySelector('.portfolio__modalActive')
+
 
 const modalWrp = document.getElementsByClassName("modal-wrapper__img-wrapper");
 const modalBtnR = document.querySelector(".modal-wrapper__btn--right");
@@ -98,70 +100,51 @@ function goToSlide(slides,slide){
 // imgRightArrows - объект картинка правой кнопки
 // btnLeft - объект кнопка левая
 // imgLeftArrows - объект картинка левой кнопки
-
-// function slidePhoto(countOnWindow,countOfSlide,slides,btnRight,imgRightArrows,btnLeft,imgLeftArrows){
-//     // let currSlide = 0;
-//         console.log("Ого");
-//         imgLeftArrows.hidden = true;
-//         btnRight.hidden = false;
-//         btnLeft.hidden = false;
-//     btnRight.addEventListener('click',function(){
-//         if(currSlide<countOfSlide-countOnWindow){ currSlide++;
-//         console.log(`${currSlide} ? ${countOfSlide}-${countOnWindow}`);
-//         goToSlide(slides,currSlide);
-//         imgRightArrows.hidden = false;
-//         imgLeftArrows.hidden = false;
-//         btnRight.hidden = false;
-//         btnLeft.hidden = false;
-//         }else{
-//             imgRightArrows.hidden = true;
-//             btnRight.hidden = true;
-//         }
-//     })
-//     btnLeft.addEventListener('click',function(){
-//         if(currSlide>0){currSlide--;
-//         goToSlide(slides, currSlide);
-//         imgRightArrows.hidden = false;
-//         imgLeftArrows.hidden = false;
-//         btnRight.hidden = false;
-//         btnLeft.hidden = false;
-//         }
-//         else {
-//             imgLeftArrows.hidden = true;
-//             btnLeft.hidden = true;
-//         }
-
-//     })
-// }
-// slidePhoto(4,countSlide, slides, btnRight,imgRightArrows,btnLeft,imgLeftArrows);
-
 //-----------------------------------------------------------------------------
+
 // Обработка перемотки карточек проектов---------------------------------------
     imgLeftArrows.hidden = true;
     btnRight.hidden = false;
     btnLeft.hidden = false;
 
-    btnRight.addEventListener('click',function(){
+    function toRightPrj(){
         if(currSlide<countSlide-countOnWindow){ currSlide++;
         goToSlide(slides,currSlide);
         imgRightArrows.hidden = false;
         imgLeftArrows.hidden = false;
-
         }else{
             imgRightArrows.hidden = true;
         }
-    })
-    btnLeft.addEventListener('click',function(){
+    }
+
+    function toLeftPrj(){
         if(currSlide>0){currSlide--;
-        goToSlide(slides, currSlide);
-        imgRightArrows.hidden = false;
-        imgLeftArrows.hidden = false;
+            goToSlide(slides, currSlide);
+            imgRightArrows.hidden = false;
+            imgLeftArrows.hidden = false;
         }
         else {
             imgLeftArrows.hidden = true;
         }
+    }
+    
+    btnRight.addEventListener('click',toRightPrj)
+    btnLeft.addEventListener('click',toLeftPrj)
 
-    })
+    let x,y,newX,newY;
+    slider.addEventListener('touchstart',function(e){
+        touch = e.changedTouches[0];
+        x = touch.pageX;
+        y = touch.pageY;
+    });
+    
+    slider.addEventListener('touchend',function(e){
+        touch = e.changedTouches[0];
+        newX = touch.pageX;
+        newY = touch.pageY;
+        if (newX-x<-30) toRightPrj();
+        if (newX-x>30) toLeftPrj();
+    });
 
 // Обработка перемотки всех фото соответствующего проекта---------------------------------------
 
@@ -175,31 +158,49 @@ function goToSlide(slides,slide){
     modalBtnR.hidden = false;
     modalBtnL.hidden = true;
     let currPhoto = 0;
-    modalBtnR.addEventListener('click',function(){
+    
+    function goToRightFoto(){
         if(currPhoto<countPhoto-1){ currPhoto++;
-        goToSlide(modalWrp,currPhoto);
-        modalImgR.hidden = false;
-        modalImgL.hidden = false;
-        modalBtnR.hidden = false;
-        modalBtnL.hidden = false;
+            goToSlide(modalWrp,currPhoto);
+            modalImgR.hidden = false;
+            modalImgL.hidden = false;
+            modalBtnR.hidden = false;
+            modalBtnL.hidden = false;
         }else{
             modalImgR.hidden = true;
             modalBtnR.hidden = true;
         }
-    })
-    modalBtnL.addEventListener('click',function(){
+    }
+    function goToLeftFoto(){
         if(currPhoto>0){currPhoto--;
-        goToSlide(modalWrp, currPhoto);
-        modalImgR.hidden = false;
-        modalImgL.hidden = false;
-        modalBtnR.hidden = false;
-        modalBtnL.hidden = false;
+            goToSlide(modalWrp, currPhoto);
+            modalImgR.hidden = false;
+            modalImgL.hidden = false;
+            modalBtnR.hidden = false;
+            modalBtnL.hidden = false;
         }
         else {
             modalImgL.hidden = true;
             modalBtnL.hidden = true;
         }
+    }
+    
+    modalBtnR.addEventListener('click',goToRightFoto)
+    modalBtnL.addEventListener('click',goToLeftFoto)
+
+    modalActive.addEventListener('touchstart',function(e){
+        touch = e.changedTouches[0];
+        x = touch.pageX;
+        y = touch.pageY;
+    });
+    modalActive.addEventListener('touchend',function(e){
+        touch = e.changedTouches[0];
+        newX = touch.pageX;
+        newY = touch.pageY;
+        if (newX-x<-30) goToRightFoto();
+        if (newX-x>30) goToLeftFoto();
     })
+
     // -------------------------------------------------------------------------------------------
     
     // Плавный скрол к разделам при ннажатии на пункты меню
@@ -267,3 +268,5 @@ form.addEventListener('submit', function(event) {
   submitForm(); // Здесь вызывается функция отправки формы через AJAX
   form.classList.add('form__hidden')
 });
+
+
