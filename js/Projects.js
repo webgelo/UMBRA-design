@@ -59,7 +59,7 @@ arrPrj[1] = new DesignProjects (
     "img/dom_tiz_nadezhda/",
     "Дом для семьи с двумя детьми, собакой и котом площадью 155 кв.м.",
     "001.jpg",
-    ["001.jpg","002.jpg","003.jpg","004.jpg","005.jpg","006.jpg","007.jpg","008.jpg","009.jpg","010.jpg","011.jpg","012.jpg","013.jpg","014.jpg","016.jpg"]
+    ["001.jpg","002.jpg","003.jpg","004.jpg","005.jpg","006.jpg","007.jpg","008.jpg","009.jpg","010.jpg","011.jpg","012.jpg","013.jpg","014.jpg","015.jpg","016.jpg"]
 );
 arrPrj[2] = new DesignProjects (
     2,
