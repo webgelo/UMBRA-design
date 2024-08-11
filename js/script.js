@@ -58,6 +58,7 @@ slides.forEach(function(sl,i){
         selectedPrj = 0;
         selectedPrj = e.currentTarget.className.slice(e.currentTarget.className.indexOf('--')+2);
         arrPrj[selectedPrj].renderModal();
+        console.log(`Выбрали ${arrPrj[selectedPrj].name}`);
         console.log(`Выбрали ${selectedPrj}`);
         countPhoto = arrPrj[selectedPrj].photos.length;
         console.log(`Количесвто фото ${countPhoto}`);
