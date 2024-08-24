@@ -109,13 +109,17 @@ function goToSlide(slides,slide){
     btnLeft.hidden = false;
 
     function toRightPrj(){
-        if(currSlide<countSlide-countOnWindow){ currSlide++;
+        if(currSlide<=countSlide-countOnWindow){ currSlide++;
+        console.log(currSlide);
+        // console.log(countOnWindow);
         goToSlide(slides,currSlide);
         imgRightArrows.hidden = false;
         imgLeftArrows.hidden = false;
-        }else{
+        }
+        else{
             imgRightArrows.hidden = true;
         }
+        if (currSlide==countSlide-countOnWindow+1) {imgRightArrows.hidden = true;}
     }
 
     function toLeftPrj(){
