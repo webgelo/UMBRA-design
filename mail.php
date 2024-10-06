@@ -1,16 +1,39 @@
 <?php
-    ini_set('SMTP','mail.hosting.reg.ru');
-    ini_set('smtp_port',587);
-    $to = "umbrainterior@yandex.ru";
-    $subject = "Новое сообщение с сайта UMBRA design group";
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $message = $_POST['message'];
-    $message = "Имя: $name \r\n"."Телефон: $phone \r\n"."Email: $email \r\n"."Текст сообщения: ".wordwrap($message, 70);
-    $headers = "From: info@product-om.ru \r\n" .
-               "Reply-To: $email \r\n";
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-    if(mail($to, $subject, $message, $headers)) echo "Email sent successfully";
-    else echo "0";
+require 'PHPMailer/Exception.php';
+require 'PHPMailer/PHPMailer.php';
+require 'PHPMailer/SMTP.php';
+
+$mail = new PHPMailer(true); // Pass true to enable exceptions
+
+// Set up the email
+$mail->setFrom('info@umbrainterior.ru', 'UMBRA design group');
+$mail->addAddress('umbrainterior@yandex.ru');
+$mail->Subject = 'Новое сообщение с сайта UMBRA design group';
+
+// Set up the email body
+$name = $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$message = $_POST['message'];
+$mail->Body = "Имя: $name \r\n"."Телефон: $phone \r\n"."Email: $email \r\n"."Текст сообщения: ".wordwrap($message, 70);
+$mail->CharSet = 'UTF-8';
+
+// Set up the SMTP server
+$mail->isSMTP();
+$mail->Host = 'smtp.spaceweb.ru';
+$mail->SMTPAuth = true;
+$mail->Username = 'info@umbrainterior.ru';
+$mail->Password = 'Um640iNru';
+$mail->SMTPSecure = 'ssl';
+$mail->Port = 465;
+
+// Send the email
+if (!$mail->send()) {
+    echo 'Email not sent: ' . $mail->ErrorInfo;
+} else {
+    echo 'Email sent successfully';
+}
 ?>
