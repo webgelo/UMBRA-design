@@ -172,6 +172,7 @@ header {
   width: 500px;
   height: 320px;
   background-color: #F6F4F4;
+  border: 2px solid #D5BA75;
   padding-top: 30px;
   padding-left: 25px;
   z-index: 20;
