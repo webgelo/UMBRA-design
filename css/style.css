@@ -192,6 +192,8 @@ header {
 .form__btn {
   width: 200px;
   height: 40px;
+  background-color: #D5BA75;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
 }
