@@ -141,6 +141,7 @@
   }
   .form__btn:first-child {
     margin-right: 3vw;
+    margin-bottom: 10px;
   }
   .form__form-control {
     width: 90vw;
