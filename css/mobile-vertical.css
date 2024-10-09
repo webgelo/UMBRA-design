@@ -59,7 +59,7 @@
     left: 5%;
   }
   .portfolio {
-    height: 530px;
+    height: 580px;
     width: 100vw;
   }
   .portfolio__modalActive {
@@ -129,7 +129,7 @@
     top: 60px;
     left: 0px;
     width: 100vw;
-    height: 65vh;
+    height: 45vh;
     padding-top: 5vh;
     padding-left: 5vw;
   }
